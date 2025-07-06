@@ -20,10 +20,7 @@ public class MedicalReportEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    private String category;
     private String pdfSrc;
     private LocalDate dateTime;
     private Integer patientId;
-    private Integer adminId;
-    private Integer labNumber;
 }

@@ -10,6 +10,7 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/patient")
+@CrossOrigin
 public class PatientController {
     final PatientService service;
     @GetMapping("/get-all")
@@ -26,7 +27,7 @@ public class PatientController {
     @DeleteMapping("delete-by-id/{id}")
     @ResponseStatus(HttpStatus.ACCEPTED)
     public void deleteById(@PathVariable Integer id) {
-        service.deleteById(id);
+         service.deleteById(id);
     }
 
     @PutMapping("/update")

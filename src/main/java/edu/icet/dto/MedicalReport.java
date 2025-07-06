@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import java.io.File;
 import java.time.LocalDate;
 @Data
 @AllArgsConstructor
@@ -12,10 +13,8 @@ import java.time.LocalDate;
 @ToString
 public class MedicalReport {
     private Integer id;
-    private String category;
     private String pdfSrc;
     private LocalDate dateTime;
     private Integer patientId;
-    private Integer adminId;
-    private Integer labNumber;
+    private File file;
 }

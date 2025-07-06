@@ -28,7 +28,6 @@ public class MedicalRecordServiceImpl implements MedicalRecordService {
         });
         return medicalReportList;
     }
-
     @Override
     public Boolean deleteRecordById(Integer id) {
         repository.deleteById(id);

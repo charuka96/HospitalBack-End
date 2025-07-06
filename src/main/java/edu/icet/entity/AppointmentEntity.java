@@ -27,7 +27,6 @@ public class AppointmentEntity {
     private String status;
     private Integer roomNumber;
     private Integer q_Number;
-
     private Integer patientId;
     private Integer adminId;
 }
